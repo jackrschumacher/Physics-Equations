@@ -17,5 +17,7 @@ public class Physics{
     double t,
     double a){
     
+    double xf = xi + vi * t + .5 * a * Math.pow(t,2);
+    return xf;
     }
 }
