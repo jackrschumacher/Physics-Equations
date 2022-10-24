@@ -29,10 +29,20 @@ public class Physics{
 
 public static double distanceAfterProjectileAtAnAngle(double theta, double speed){
   //convert degrees to radians
-
-
-
-  
+  double radians =  theta * Math.PI / 180;
+  double xSpeed = speed * Math.cos(radians);
+  double ySpeed = speed * Math.sin(radians);
   double horizontalDistance;
   return horizontalDistance;
+}
+
+// flight time (vertical)
+
+/** This method calculates flight time of an object traveling vertically and effected by gravity
+  * Precondition : initial speed (up is positive)
+  * Postcondition: time is returned as twice the amount of time taken to reach the apex
+  */
+
+public static double flightTime(double speed){
+  
 }
