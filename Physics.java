@@ -21,3 +21,18 @@ public class Physics{
     return xf;
     }
 }
+
+  /* Position after an initial hit upwards 0 < theta < MATH>PI/2
+  *Precondition: angle in degress, 0 < theta < 90, and initial speed
+  *Postondition: total horizontal distance traveled
+  */
+
+public static double distanceAfterProjectileAtAnAngle(double theta, double speed){
+  //convert degrees to radians
+
+
+
+  
+  double horizontalDistance;
+  return horizontalDistance;
+}
