@@ -20,7 +20,7 @@ public class Physics{
     double xf = xi + vi * t + .5 * a * Math.pow(t,2);
     return xf;
     }
-}
+
 
   /* Position after an initial hit upwards 0 < theta < MATH>PI/2
   *Precondition: angle in degress, 0 < theta < 90, and initial speed
@@ -53,4 +53,5 @@ public static double distanceAfterProjectileAtAnAngle(double theta, double speed
 public static double flightTime(double speed){
   double totalTime = 2* (-1 * speed) / GRAVITY;
   return totalTime;
+}
 }
