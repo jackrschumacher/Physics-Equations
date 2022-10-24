@@ -44,5 +44,6 @@ public static double distanceAfterProjectileAtAnAngle(double theta, double speed
   */
 
 public static double flightTime(double speed){
-  
+  double totalTime = 2* (-1 * speed) / GRAVITY;
+  return totalTime;
 }
