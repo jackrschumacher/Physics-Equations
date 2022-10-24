@@ -32,7 +32,14 @@ public static double distanceAfterProjectileAtAnAngle(double theta, double speed
   double radians =  theta * Math.PI / 180;
   double xSpeed = speed * Math.cos(radians);
   double ySpeed = speed * Math.sin(radians);
-  double horizontalDistance;
+
+  // Calculates the amount of time the ball takes to hit the ground
+  double timeBeforeLanding = flightTime(ySpeed);
+
+  // Calculates the total horizontal distance based on xSpeed and how long the ball flies.
+  
+  double horizontalDistance = positionConstantAccelMissingFinalPosition(0, xSpeed, timeBeforeLanding, 0);
+
   return horizontalDistance;
 }
 
